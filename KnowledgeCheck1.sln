@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnowledgeCheck", "KnowledgeCheck\KnowledgeCheck.csproj", "{D26916CA-7CFA-4795-9CF3-19D8C4BEA02E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnowledgeCheck.Tests", "KnowledgeCheck.Tests\KnowledgeCheck.Tests.csproj", "{9CD7D325-E979-41EA-9A7B-EBD160C80492}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D26916CA-7CFA-4795-9CF3-19D8C4BEA02E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D26916CA-7CFA-4795-9CF3-19D8C4BEA02E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D26916CA-7CFA-4795-9CF3-19D8C4BEA02E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D26916CA-7CFA-4795-9CF3-19D8C4BEA02E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CD7D325-E979-41EA-9A7B-EBD160C80492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CD7D325-E979-41EA-9A7B-EBD160C80492}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CD7D325-E979-41EA-9A7B-EBD160C80492}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CD7D325-E979-41EA-9A7B-EBD160C80492}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
