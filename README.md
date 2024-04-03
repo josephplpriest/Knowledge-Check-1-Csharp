@@ -1,1 +1,1 @@
-![CI/CD](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?branch=main)
+![CI/CD](https://github.com/github/docs/actions/workflows/CI_CD.yml/badge.svg?branch=main)
