@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace KnowledgeCheck1_Calculator.Tests
@@ -10,11 +11,11 @@ namespace KnowledgeCheck1_Calculator.Tests
         {
             // Arrange
             Calculator calculator = new Calculator();
-            int first = 5;
-            int second = 10;
+            double first = 5;
+            double second = 10;
 
             // Act
-            int result = calculator.Add(first, second);
+            double result = calculator.Calculate("add", first, second);
 
             // Assert
             Assert.AreEqual(15, result, "Addition result is incorrect");
@@ -25,11 +26,11 @@ namespace KnowledgeCheck1_Calculator.Tests
         {
             // Arrange
             Calculator calculator = new Calculator();
-            int first = 10;
-            int second = 5;
+            double first = 10;
+            double second = 5;
 
             // Act
-            int result = calculator.Subtract(first, second);
+            double result = calculator.Calculate("subtract", first, second);
 
             // Assert
             Assert.AreEqual(5, result, "Subtraction result is incorrect");
@@ -40,11 +41,11 @@ namespace KnowledgeCheck1_Calculator.Tests
         {
             // Arrange
             Calculator calculator = new Calculator();
-            int first = 10;
-            int second = 5;
+            double first = 10;
+            double second = 5;
 
             // Act
-            int result = calculator.Multiply(first, second);
+            double result = calculator.Calculate("multiply", first, second);
 
             // Assert
             Assert.AreEqual(50, result, "Multiplication result is incorrect");
@@ -58,7 +59,7 @@ namespace KnowledgeCheck1_Calculator.Tests
             double second = 5;
 
             // Act
-            double result = calculator.Divide(first, second);
+            double result = calculator.Calculate("divide", first, second);
 
             // Assert
             Assert.AreEqual((double)2, result, "Division result is incorrect");

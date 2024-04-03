@@ -1,31 +1,28 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace KnowledgeCheck1_Calculator
 {
     public class Calculator
     {
-        public int Add(int first, int second)
+        private readonly Dictionary<string, Func<double, double, double>> operations;
+
+        public Calculator()
         {
-            return first + second;
+            operations = new Dictionary<string, Func<double, double, double>>
+            {
+                {"add", (a, b) => a + b},
+                {"subtract", (a, b) => a - b},
+                {"multiply", (a, b) => a * b},
+                {"divide", (a, b) => a / b}
+            };
         }
 
-        public int Subtract(int first, int second)
+        public double Calculate(string operation, double first, double second)
         {
-            return first - second;
-        }
+            if (!operations.ContainsKey(operation))
+                throw new ArgumentException("Invalid operation");
 
-        public int Multiply(int first, int second)
-        {
-            return first * second;
-        }
-
-        public double Divide(double first, double second)
-        {
-            return first / second;
+            return operations[operation](first, second);
         }
     }
 }
